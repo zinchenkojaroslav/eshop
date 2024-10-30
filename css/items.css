@@ -1,0 +1,91 @@
+.item a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.item{
+    background-color: #1d1d1d;
+    width: 242px;
+    padding: 16px;
+}
+.item_text{
+    font-size: 16px;
+    border-bottom: 1px solid #b9b7b7;
+    height: 50px;
+    word-break:break-all;
+    text-align: center;
+}
+.item img{
+    width: 210px;
+    height: 210px;
+}
+.item_price{
+    margin-top: 12px;
+    color:#D75E5E;
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.product_items{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-top: 92px;
+}
+.item{
+    display: none;
+}
+.show {
+    display: block; 
+  }
+.nav_filter{
+    margin-top: 24px;
+    display: flex;  
+    justify-content: center;  
+}
+.filter_by_name ul{
+    display: flex;
+    gap:10px;
+}
+.filter_by_name button{
+    background-color: #0f0f0f;
+    padding: 8px;
+    border-radius: 12px;
+    color:white;
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+}
+.filter_by_name img{
+    width: 42px;
+    height: 42px;
+}
+.filter_by_name ul li:hover{
+    background-color: #383838;
+    transition: 0.3s ease-in-out;
+}
+.btn.active {
+    background-color: #666;
+    color: white;
+  }
+  .btn{
+    border: none;
+    outline: none;
+  }
+  .item button{
+    width: 100%;
+    margin-top: 8px;
+    border: 1px solid #D75E5E;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+  }
+  .item button:hover {
+    background-color: #D75E5E;
+  }
+  .item button:hover span {
+    display:none
+  }
+  
+  .item button:hover:before {
+    content:"Do košíka";
+  }
+  

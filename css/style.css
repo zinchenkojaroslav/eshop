@@ -1,0 +1,94 @@
+.intromain{
+    margin-top: 58px;
+}
+.intro_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+figure{
+    width: 1080px;
+    height: 700px;
+    background-image: url(../img/iphonecropped.jpg);
+    background-size: 1068px 694px;
+    background-repeat: no-repeat;
+}
+/* items cards */
+.category{
+    margin-top: 24px;
+}
+.categ_item{
+    background-color: #1d1d1d;
+    height: 199px;
+    width: 250px;
+    padding: 24px;
+    margin-bottom: 18px;
+}
+.categ_item a{
+    display: flex;
+    gap:12px;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+.categ_item a img{
+    width: 131px;
+    height: 117px;
+    transition: transform .2s;
+}
+.categ_item a img:hover{
+    transform: scale(1.2);
+}
+.category_items{
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media(max-width:1076px){
+    figure{
+        background-image: url(../img/iphonemobver.jpg);
+        width: 734px;
+        height: 548px;
+        background-size: 734px 548px;
+        background-repeat: no-repeat;
+    }
+    .category_items{
+        margin-top: 148px;
+        justify-content: center;
+        gap:5px;
+    }
+}
+@media(max-width:734px){
+    figure{
+        width: 512px;
+        height: 467px;
+        background-size: 512px 422px;
+        background-repeat: no-repeat;
+    }
+}
+@media(max-width:529px){
+    figure{
+        width: 548px;
+        height: 460px;
+        background-size: 545px 426px;
+        background-repeat: no-repeat;   
+        object-fit: cover; 
+    }
+}
+@media(max-width:534px){
+    .categ_item{
+        height: 130px;
+        width: 200px;
+        padding: 12px;
+    }
+    .categ_item a img{
+        width: 92px;
+        height: 78px;
+    }
+    .item_text{
+        font-size: 12px;
+    }
+}
+

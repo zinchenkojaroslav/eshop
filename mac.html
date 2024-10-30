@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/items.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Apple</title>
+</head>
+<body>
+    <div class="nav_bar">
+        <ul class="mainnav">
+            <li><a href="index.html"><img src="img/apple.png" class="navimg" alt="Logo"></a> </li>
+                <div class="navbarcenter">
+                    <li class="nav-item"><a href="iphone.html">iPhone</a></li>
+                    <li class="nav-item"><a href="ipad.html">iPad</a></li>
+                    <li class="nav-item"><a href="applewatch.html">Smart Hodinky</a></li>
+                    <li class="nav-item"><a href="airpods.html">Airpods</a></li>
+                    <li class="nav-item"><a href="mac.html">Mac</a></li>
+                </div>
+                <li><a href="#"></a> <img src="img/kosik.png" class="navimg" id="cart-icon" alt="Prejsť do košika"></li> 
+                <div class="cart">
+                    <h2 class="cart-title">Košík</h2>
+                    <div class="cart-content">
+                        
+                    </div>
+                    <div class="total">
+                        <div class="total-title">
+                            Total
+                        </div>
+                        <div class="total-price">0</div>
+                    </div>
+                    <button type="button" class="btn-buy">Kupit</button>
+                    <i class='bx bx-x-circle' id="close-cart"></i>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        </ul>
+    </div>
+    <div class="nav_filter wrapper">
+        <div id="myBtnContainer" class="filter_by_name">
+                <button class="btn active" onclick="filterSelection('all')"> Všetko</button>
+                <button class="btn" onclick="filterSelection('macbookair')"><img src="img/macbookair.jpg" alt="">MacBook Air</button>
+                <button class="btn" onclick="filterSelection('macbookpro')"><img src="img/macbookpro.jpg" alt="">MacBook Pro</button>
+                <button class="btn" onclick="filterSelection('imac')"><img src="img/imac.jpg" alt="">iMac</button>
+        </div>
+    </div>
+        <div class="product_items wrapper">
+            <div class="item macbookair">
+                <a href="#">
+                    <img class="product-img" src="img/macbookairretina.jpg" alt="">
+                    <span class="item_text">MacBook Air 13 Retina M2</span>
+                </a>
+                        <button class="add-cart"><span class="item_price">999€</span></button> 
+                
+            </div>
+            <div class="item macbookair">
+                <a href="#">
+                    <img class="product-img" src="img/macbookairretina2.jpg" alt="">
+                    <span class="item_text">MacBook Air 13 Retina M1</span>
+                </a>
+
+                    <button class="add-cart"><span class="item_price">999€</span></button>
+            </div>
+            <div class="item macbookair">
+                <a href="#">
+                    <img class="product-img" src="img/macbookairretina15.jpg" alt="">
+                    <span class="item_text">MacBook Air 15 Retina</span>
+                </a>
+                    <button class="add-cart"><span class="item_price">999€</span></button>
+            </div>
+            <div class="item macbookpro">
+                <a href="#">
+                    <img class="product-img" src="img/macbookpro13.jpg" alt="">
+                    <span class="item_text">MacBook Pro 13</span>
+                </a>
+                    <button class="add-cart"><span class="item_price">999€</span></button>
+            </div>
+            <div class="item macbookpro">
+                <a href="#">
+                    <img class="product-img" src="img/macbookpro16.jpg" alt="">
+                    <span class="item_text">Apple MacBook Pro 16</span>
+                </a>
+                    <button class="add-cart"><span class="item_price">999€</span></button>
+            </div>
+            <div class="item imac">
+                <a href="#">
+                    <img class="product-img" src="img/imac24.jpg" alt="">
+                    <span class="item_text">iMac 24 with Retina 4.5K</span>
+                </a>
+                    <button class="add-cart"><span class="item_price">999€</span></button>
+            </div>
+            <div class="item imac">
+                <a href="#">
+                    <img class="product-img" src="img/imacpink.jpg" alt="">
+                    <span class="item_text">iMac 24 with Retina 4.5K</span>
+                </a>
+                    <button class="add-cart"><span class="item_price">999€</span></button>
+            </div>
+              
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="wrap wrapper">
+                <div class="footer-item">
+                    <div class="footer-subitem footer-header">Produkt</div>
+                    <div class="footer-subitem"><a href="iphone.html">iPhone</a></div>
+                    <div class="footer-subitem"><a href="ipad.html">iPad</a></div>
+                    <div class="footer-subitem"><a href="airpods.html">AirPods</a></div>
+                    <div class="footer-subitem"><a href="mac.html">Mac</a></div>
+                    <div class="footer-subitem"><a href="applewatch.html">Apple Watch</a></div>
+                    <div class="footer-subitem"><a href="homepod.html">HomePod</a></div>
+                    <div class="footer-subitem"><a href="airtag.html">AirTag</a></div>
+                    <div class="footer-subitem"><a href="vision.html">Vision Pro</a></div>
+                </div>
+                <div class="footer-item">
+                    <img src="img/apple-logo.jpg" alt="">
+                </div>
+            </div>
+        </footer>
+    <script src="js/script.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
